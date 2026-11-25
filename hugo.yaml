@@ -1,0 +1,14 @@
+module:
+
+  imports:
+
+    # Lucide, the default set of hugolify-theme-icons: the engine imports this
+    # module, so a site gets it without listing it.
+    # Mounted to assets/icons/lucide, the folder of the set named "lucide":
+    # names written without a prefix resolve here while params.icons.set is
+    # "lucide" (the engine's default), and "lucide:name" whatever the default.
+    - path: github.com/lucide-icons/lucide
+      ignoreConfig: true
+      mounts:
+        - source: icons
+          target: assets/icons/lucide
